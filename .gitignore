@@ -1,0 +1,8 @@
+.nuxt
+.env
+node_modules
+dist
+tmp
+sw.*
+test/e2e/videos
+test/e2e/screenshots
