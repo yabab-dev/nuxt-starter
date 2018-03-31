@@ -13,8 +13,6 @@ module.exports = {
    */
   build: {
     babel: babel(),
-    cache: true,
-    parallel: false,
     extractCSS: true,
     cssSourceMap: true,
     optimization: {

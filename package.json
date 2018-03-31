@@ -24,7 +24,7 @@
     "@nuxtjs/pwa": "^2.0.8",
     "@nuxtjs/router": "^1.0.1",
     "nuxt-class-component": "^1.2.0",
-    "nuxt-edge": "^2.0.0-25373279.a283788",
+    "nuxt-edge": "^2.0.0-25375479.ba18127",
     "vue-property-decorator": "^6.0.0",
     "vuex-class": "^0.3.0"
   },
@@ -49,9 +49,9 @@
     "dotenv": "^5.0.1",
     "eslint": "^4.19.1",
     "eslint-config-prettier": "^2.9.0",
-    "eslint-import-resolver-webpack": "^0.8.4",
+    "eslint-import-resolver-webpack": "^0.9.0",
     "eslint-loader": "^2.0.0",
-    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-import": "^2.10.0",
     "eslint-plugin-prettier": "^2.6.0",
     "eslint-plugin-vue": "^4.4.0",
     "imagemin-webpack-plugin": "^2.1.1",
@@ -65,8 +65,8 @@
     "prettier": "^1.11.1",
     "sass-loader": "^6.0.7",
     "stylelint": "^9.1.3",
-    "stylelint-config-recommended-scss": "^3.1.0",
-    "stylelint-scss": "^2.5.0",
+    "stylelint-config-recommended-scss": "^3.2.0",
+    "stylelint-scss": "^3.0.0",
     "tota11y": "^0.1.6",
     "ts-jest": "^22.4.2",
     "ts-loader": "^4.1.0",
@@ -90,7 +90,11 @@
       "__TS_CONFIG__": "tsconfig.json",
       "__TRANSFORM_HTML__": true
     },
-    "moduleFileExtensions": ["ts", "js", "vue"],
+    "moduleFileExtensions": [
+      "ts",
+      "js",
+      "vue"
+    ],
     "testRegex": "/test/.*\\.(ts|js)$"
   }
 }
