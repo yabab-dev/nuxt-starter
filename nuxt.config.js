@@ -12,6 +12,11 @@ module.exports = merge(config, {
   },
 
   /**
+   * CSS files
+   */
+  css: ['~/assets/scss/index.scss'],
+
+  /**
    * Progress bar
    */
   loading: { color: '#3B8070' },

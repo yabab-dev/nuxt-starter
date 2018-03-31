@@ -1,11 +1,12 @@
 const { join } = require('path');
 const ImageminPlugin = require('imagemin-webpack-plugin').default;
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
+const CriticalPlugin = require('./critical');
 
 const rootDir = join(__dirname, '../..');
 
 module.exports = async function() {
-  this.extendBuild((config, { isDev }) => {
+  this.extendBuild((config, { isDev, isClient }) => {
     if (!isDev) {
       // Add Imagemin plugin
       config.plugins.push(
@@ -24,6 +25,10 @@ module.exports = async function() {
           statsFilename: join(rootDir, 'tmp/stats.json'),
         }),
       );
+
+      if (isClient) {
+        config.plugins.unshift(new CriticalPlugin());
+      }
     }
   });
 };

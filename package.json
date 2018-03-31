@@ -43,6 +43,7 @@
     "babel-jest": "^22.4.3",
     "babel-loader": "^8.0.0-beta.2",
     "babel-plugin-dynamic-import-node-babel-7": "^2.0.7",
+    "critical": "^1.2.1",
     "cssnano": "^3.10.0",
     "cypress": "^2.1.0",
     "deepmerge": "^2.1.0",
