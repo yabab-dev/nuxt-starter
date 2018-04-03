@@ -1,6 +1,6 @@
 # Nuxt Starter
 
-> Personnal nuxt starter
+> Personnal Nuxt starter
 
 ## Features
 
@@ -22,5 +22,9 @@
 
 ## Todo
 
-* Run and display Stylelint with Webpack
-* Extract Critical CSS
+* Remove module system, keep Vuex simplified decorators
+* [Extract Critical CSS](https://github.com/nuxt/nuxt.js/issues/3091)
+
+## License
+
+**MIT**: see `LICENSE` file
