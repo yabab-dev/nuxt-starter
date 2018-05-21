@@ -1,4 +1,4 @@
-import { State, Getter, Mutation, Action, namespace } from 'vuex-class';
+import { namespace } from 'vuex-class';
 
 const ModulesManager = {
   modules: [],
@@ -46,10 +46,7 @@ const ModulesManager = {
       // Vuex store itself
       store,
       // Decorators
-      State: namespace(name, State),
-      Getter: namespace(name, Getter),
-      Mutation: namespace(name, Mutation),
-      Action: namespace(name, Action),
+      ...namespace(name),
     };
   },
 };
