@@ -2,7 +2,7 @@
 
 import Vuex from 'vuex';
 import { mount, createLocalVue } from '@vue/test-utils';
-import Component from '../src/modules/main/pages/IndexPage';
+import Component from '../../src/modules/main/pages/IndexPage';
 
 const localVue = createLocalVue();
 
@@ -19,7 +19,7 @@ describe('Component', () => {
     });
   });
 
-  test('IndexPage.vue is correctly constructed', () => {
+  test('IndexPage.vue is correctly rendered', () => {
     const wrapper = mount(Component, { store, localVue });
     expect(wrapper.find('h1').text()).toBe('Hello Nuxt');
     expect(wrapper.find('p').text()).toBe('Value from store: bar');

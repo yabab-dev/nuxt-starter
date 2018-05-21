@@ -11,7 +11,6 @@
 * Units tests with @vue/test-utils & Jest
 * E2E tests with Cypress
 * Accessibility checks with tota11y
-* Modules system for pages & Vuex stores
 * Nuxt modules installed by default:
   * @nuxtjs/pwa
   * @nuxtjs/router
@@ -19,10 +18,18 @@
   * @nuxtjs/component-cache
 * Webpack plugins
   * Imagemin
+* Simple modules system to organize your app
 
 ## Todo
 
-* Remove module system, keep Vuex simplified decorators
+* Fix Jest test
+* `vueclass` alias
+* Vuelidate
+* Stylelint
+* Tota11y
+* Better Typescript support
+* Better starting demo
+* Docker file
 * [Extract Critical CSS](https://github.com/nuxt/nuxt.js/issues/3091)
 
 ## License
