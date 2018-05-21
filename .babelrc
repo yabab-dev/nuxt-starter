@@ -4,7 +4,11 @@
       "@babel/preset-env",
       {
         "targets": {
-          "browsers": ["> 1%", "last 2 versions", "safari >= 7"]
+          "browsers": [
+            "> 1%",
+            "last 2 versions",
+            "safari >= 7"
+          ]
         },
         "modules": false
       }
@@ -12,7 +16,12 @@
   ],
   "plugins": [
     "@babel/plugin-proposal-object-rest-spread",
-    "@babel/plugin-proposal-decorators",
+    [
+      "@babel/plugin-proposal-decorators",
+      {
+        "legacy": true
+      }
+    ],
     [
       "@babel/plugin-proposal-class-properties",
       {
@@ -24,7 +33,16 @@
   ],
   "env": {
     "test": {
-      "presets": [["@babel/preset-env", { "targets": { "node": "current" } }]],
+      "presets": [
+        [
+          "@babel/preset-env",
+          {
+            "targets": {
+              "node": "current"
+            }
+          }
+        ]
+      ],
       "plugins": [
         "@babel/plugin-syntax-dynamic-import",
         "dynamic-import-node-babel-7"
