@@ -1,3 +1,6 @@
 export default ({ isDev }) => {
-  if (isDev) require('tota11y/build/tota11y.min');
+  if (isDev) {
+    // eslint-disable-next-line
+    const lib = import(/* webpackChunkName: "tota11y" */ 'tota11y/build/tota11y.min');
+  }
 };
