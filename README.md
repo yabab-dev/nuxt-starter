@@ -23,7 +23,6 @@
 ## Todo
 
 * Fix Jest test
-* Tota11y
 * Vue i18n
 * Better starting demo
 * Docker file

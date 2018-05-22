@@ -25,7 +25,13 @@ module.exports = {
   /**
    * Plugins
    */
-  plugins: ['~~/internals/modules/plugin'],
+  plugins: [
+    '~~/internals/modules/plugin',
+    {
+      src: '~~/internals/tota11y',
+      ssr: false,
+    },
+  ],
 
   /**
    * Nuxt modules
