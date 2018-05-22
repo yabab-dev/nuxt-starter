@@ -23,7 +23,7 @@
 
 ## Todo
 
-* Docker file
+* Fix Tota11y bundle in prod
 * [Extract Critical CSS](https://github.com/nuxt/nuxt.js/issues/3091)
 
 ## License

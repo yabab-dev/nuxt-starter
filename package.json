@@ -46,7 +46,6 @@
     "babel-loader": "^8.0.0-beta.2",
     "babel-plugin-dynamic-import-node-babel-7": "^2.0.7",
     "cssnano": "^3.10.0",
-    "cypress": "^2.1.0",
     "deepmerge": "^2.1.0",
     "dotenv": "^5.0.1",
     "eslint": "^4.19.1",
@@ -76,8 +75,10 @@
     "ts-loader": "^4.3.0",
     "typescript": "^2.8.3",
     "vue-eslint-parser": "^2.0.3",
-    "webpack-bundle-analyzer": "^2.13.0",
     "yaml-loader": "^0.5.0"
+  },
+  "peerDependencies": {
+    "cypress": "^2.1.0"
   },
   "jest": {
     "transform": {
