@@ -25,6 +25,7 @@
     "@nuxtjs/router": "^1.0.1",
     "nuxt-class-component": "^1.2.1",
     "nuxt-edge": "^2.0.0-25448873.aaf44cf",
+    "nuxt-i18n": "^3.2.3",
     "vue-property-decorator": "^6.1.0",
     "vuelidate": "^0.7.1",
     "vuex-class": "^0.3.1"

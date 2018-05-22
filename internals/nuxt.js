@@ -42,6 +42,7 @@ module.exports = {
     ['@nuxtjs/dotenv', { path: join(__dirname, '..') }],
     '@nuxtjs/component-cache',
     '@nuxtjs/pwa',
+    'nuxt-i18n',
 
     // Custom modules
     '~~/internals/typescript',

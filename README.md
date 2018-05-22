@@ -16,6 +16,7 @@
   * @nuxtjs/router
   * @nuxtjs/dotenv
   * @nuxtjs/component-cache
+  * nuxt-i18n
 * Webpack plugins
   * Imagemin
 * Simple modules system to organize your app
@@ -23,7 +24,6 @@
 ## Todo
 
 * Fix Jest test
-* Vue i18n
 * Better starting demo
 * Docker file
 * [Extract Critical CSS](https://github.com/nuxt/nuxt.js/issues/3091)
