@@ -1,11 +1,10 @@
 /* eslint-disable */
 
 import Vuex from 'vuex';
-import { mount, createLocalVue } from '@vue/test-utils';
+import { createLocalVue, shallowMount } from '@vue/test-utils';
 import Component from '../../src/modules/main/pages/IndexPage';
 
 const localVue = createLocalVue();
-
 localVue.use(Vuex);
 
 describe('Component', () => {
@@ -13,15 +12,10 @@ describe('Component', () => {
 
   beforeEach(() => {
     store = new Vuex.Store();
-    store.registerModule('main', {
-      namespaced: true,
-      state: { foo: 'bar ' },
-    });
   });
 
   test('IndexPage.vue is correctly rendered', () => {
-    const wrapper = mount(Component, { store, localVue });
+    const wrapper = shallowMount(Component, { localVue });
     expect(wrapper.find('h1').text()).toBe('Hello Nuxt');
-    expect(wrapper.find('p').text()).toBe('Value from store: bar');
   });
 });

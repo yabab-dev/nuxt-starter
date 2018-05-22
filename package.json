@@ -88,17 +88,14 @@
     "moduleNameMapper": {
       "^vue$": "vue/dist/vue.common.js",
       "vue-mm": "<rootDir>/internals/modules/manager.js",
-      "^~/(.*)$": "<rootDir>/src/$1"
+      "^~/(.*)$": "<rootDir>/src/$1",
+      "vueclass": "<rootDir>/src/vueclass.js"
     },
     "globals": {
       "__TS_CONFIG__": "tsconfig.json",
       "__TRANSFORM_HTML__": true
     },
-    "moduleFileExtensions": [
-      "ts",
-      "js",
-      "vue"
-    ],
+    "moduleFileExtensions": ["ts", "js", "vue"],
     "testRegex": "/test/unit/.*\\.(ts|js)$"
   }
 }
