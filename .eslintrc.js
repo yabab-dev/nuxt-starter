@@ -6,7 +6,12 @@ module.exports = {
   },
   parser: 'vue-eslint-parser',
   parserOptions: {
+    // Babel
     parser: 'babel-eslint',
+
+    // TypeScript
+    // parser: 'typescript-eslint-parser',
+    // plugins: ['typescript'],
   },
   extends: [
     'eslint:recommended',
@@ -15,5 +20,8 @@ module.exports = {
   ],
   rules: {
     'no-console': 'warn',
+    // TypeScript bugs
+    // 'no-undef': 'off',
+    // 'no-unused-vars': 'off',
   },
 };

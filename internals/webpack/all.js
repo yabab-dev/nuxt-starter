@@ -1,3 +1,5 @@
+const StyleLintPlugin = require('stylelint-webpack-plugin');
+
 module.exports = async function() {
   this.extendBuild((config, { isClient }) => {
     // ESLint
@@ -9,6 +11,13 @@ module.exports = async function() {
         loader: 'eslint-loader',
       });
     }
+
+    // Stylelint
+    config.plugin('stylelint').use(StyleLintPlugin, [
+      {
+        syntax: 'scss',
+      },
+    ]);
 
     // Json
     config.module.rules.push({
@@ -22,7 +31,14 @@ module.exports = async function() {
       use: [{ loader: 'json-loader' }, { loader: 'yaml-loader' }],
     });
 
+    // Markdown
+    config.module.rules.push({
+      test: /\.md$/,
+      loader: 'markdown-loader',
+    });
+
     // Modules manager
+    config.resolve.alias['vueclass'] = '~/vueclass';
     config.resolve.alias['vue-mm'] = '~~/internals/modules/manager';
   });
 };
