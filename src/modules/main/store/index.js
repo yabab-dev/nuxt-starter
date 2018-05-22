@@ -1,9 +1,7 @@
 import { store } from 'vue-mm';
 
 export default store('main', {
-  state: () => ({
-    foo: 'bar',
-  }),
+  state: () => ({}),
   mutations: {},
   getters: {},
   actions: {},

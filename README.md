@@ -23,8 +23,6 @@
 
 ## Todo
 
-* Fix Jest test
-* Better starting demo
 * Docker file
 * [Extract Critical CSS](https://github.com/nuxt/nuxt.js/issues/3091)
 

@@ -23,6 +23,11 @@ module.exports = {
   },
 
   /**
+   * Styles
+   */
+  css: ['~/assets/scss/index.scss'],
+
+  /**
    * Plugins
    */
   plugins: [

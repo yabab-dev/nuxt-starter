@@ -1,24 +1,18 @@
 <template>
-  <div class="layout default-layout">
-
-    <nuxt-link
-      :to="{ name: 'main.index' }"
-      class="home-link"
-    >
-      Home
-    </nuxt-link>
-    <nuxt-link
-      :to="{ name: 'main.about' }"
-      class="about-link"
-    >
-      About
-    </nuxt-link>
-
+  <div class="default-layout">
+    <github-corner/>
     <nuxt/>
-
   </div>
 </template>
 
 <script>
-export default {};
+import { Component, Vue } from 'vueclass';
+import GithubCorner from '../components/GithubCorner';
+
+@Component({
+  components: {
+    GithubCorner,
+  },
+})
+export default class DefaultLayout extends Vue {}
 </script>

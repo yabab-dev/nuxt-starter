@@ -1,7 +1,92 @@
-html,
-body {
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'),
+    url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7l.woff2)
+      format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'),
+    url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwlxdu.woff2)
+      format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+body,
+html {
+  background: #f9f9f9;
+  color: #363636;
   margin: 0;
   padding: 0;
-  font-family: 'Montserrat', Arial, sans-serif;
-  background: #ccc;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.default-layout {
+  padding: 20px;
+  max-width: 500px;
+  margin: auto;
+
+  p {
+    line-height: 1.5em;
+    margin: 40px 0;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #3eb783;
+    border: 0 solid darken(#3eb783, 10%);
+    border-width: 4px;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-radius: 6px;
+    color: #eee;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  h1 {
+    font-weight: normal;
+    text-align: center;
+    font-size: 2.4rem;
+    margin: 80px 0;
+
+    span {
+      display: inline-block;
+      padding: 20px 30px;
+      color: #eee;
+      background: #262626;
+
+      &.vue {
+        color: #eee;
+        background: #3eb783;
+      }
+    }
+  }
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease;
+}
+.fade-enter {
+  opacity: 0;
+}
+.fade-leave-active {
+  display: none;
 }
