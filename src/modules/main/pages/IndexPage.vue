@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import { Component, Vue } from '~/vueclass';
+import { Component, Vue } from 'vueclass';
 import MainStore from '../store';
 
 @Component()

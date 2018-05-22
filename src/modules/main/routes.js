@@ -1,5 +1,11 @@
-const IndexPage = () => import('./pages/IndexPage').then(r => r.default);
-const AboutPage = () => import('./pages/AboutPage').then(r => r.default);
+const IndexPage = () =>
+  import(/* webpackChunkName: "index" */ './pages/IndexPage').then(
+    m => m.default,
+  );
+const AboutPage = () =>
+  import(/* webpackChunkName: "about" */ './pages/AboutPage').then(
+    m => m.default,
+  );
 
 export default [
   {

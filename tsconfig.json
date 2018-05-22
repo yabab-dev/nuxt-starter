@@ -16,14 +16,14 @@
     "allowSyntheticDefaultImports": true,
     "allowJs": true,
     "paths": {
-      "~/*": ["./src/app/*"],
+      "~/*": ["./*"],
       "~~/*": ["./src/*"],
-      "@/*": ["./src/app/*"],
-      "@@/*": ["./src/*"],
+      "@/*": ["./src/*"],
+      "@@/*": ["./*"],
       "vueclass": ["./src/vueclass.js"],
       "assets/*": ["./src/assets/*"],
       "static/*": ["./src/static/*"]
     }
   },
-  "include": ["./src/**/*"]
+  "include": ["./src/**/*", "./internals/**/*"]
 }
