@@ -13,11 +13,11 @@ module.exports = async function() {
     }
 
     // Stylelint
-    config.plugin('stylelint').use(StyleLintPlugin, [
-      {
+    config.plugins.push(
+      new StyleLintPlugin({
         syntax: 'scss',
-      },
-    ]);
+      }),
+    );
 
     // Json
     config.module.rules.push({
