@@ -23,11 +23,8 @@
 ## Todo
 
 * Fix Jest test
-* `vueclass` alias
-* Vuelidate
-* Stylelint
 * Tota11y
-* Better Typescript support
+* Vue i18n
 * Better starting demo
 * Docker file
 * [Extract Critical CSS](https://github.com/nuxt/nuxt.js/issues/3091)
